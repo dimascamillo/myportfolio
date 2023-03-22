@@ -1,0 +1,42 @@
+.menu-windows {
+  background-color: $gray-400;
+  padding: .5rem ;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      cursor: pointer;
+      width: 120px;
+      height: 50px;
+      padding-left: .5rem;
+      background: #C3C3C3;
+      box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #F0F0F0, inset -4px -4px 0px #7E7E7E, inset 4px 4px 0px #B1B1B1;
+      display: flex;
+      align-items: center;
+      gap: .6875rem;
+      a {
+        font-size: 1.625rem;
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    .clock {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .625rem;
+      padding: 7px;
+      width: 137px;
+      height: 46px;
+      background: #C3C3C3;
+      box-shadow: inset -2px -2px 0px #F0F0F0, inset 2px 2px 0px #7E7E7E;
+
+      #hour {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

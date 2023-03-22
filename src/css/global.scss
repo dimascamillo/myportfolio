@@ -1,0 +1,28 @@
+@import "variables";
+@import "main";
+@import "footer";
+
+// reset css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// end reset css
+
+@font-face {
+  font-family: "Windows95";
+  src: url("../assets/fonts/w95fa.woff")
+}
+
+body {
+  background-color: $blue-300;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body, button, input, select, textarea{
+  font-family: "Windows95", sans-serif;
+}

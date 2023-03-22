@@ -1,0 +1,86 @@
+.mt-60 {
+  margin-top: 3.75rem;
+}
+
+.container {
+  padding: 5.625rem 1.875rem;
+}
+
+.row {
+  display: flex;
+  gap: 3.75rem;
+}
+.row .shortcut {
+  cursor: pointer;
+  min-width: 9rem;
+  text-align: center;
+}
+.row .shortcut h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.menu-windows {
+  background-color: #C3C3C3;
+  padding: 0.5rem;
+}
+.menu-windows nav {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-windows nav li {
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  padding-left: 0.5rem;
+  background: #C3C3C3;
+  box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #F0F0F0, inset -4px -4px 0px #7E7E7E, inset 4px 4px 0px #B1B1B1;
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+}
+.menu-windows nav li a {
+  font-size: 1.625rem;
+  text-decoration: none;
+  color: #000000;
+}
+.menu-windows nav .clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 7px;
+  width: 137px;
+  height: 46px;
+  background: #C3C3C3;
+  box-shadow: inset -2px -2px 0px #F0F0F0, inset 2px 2px 0px #7E7E7E;
+}
+.menu-windows nav .clock #hour {
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Windows95";
+  src: url("../assets/fonts/w95fa.woff");
+}
+body {
+  background-color: #008282;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body, button, input, select, textarea {
+  font-family: "Windows95", sans-serif;
+}
+
+/*# sourceMappingURL=global.css.map */

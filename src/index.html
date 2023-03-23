@@ -211,9 +211,9 @@
   <footer class="menu-windows">
     <nav>
       <ul>
-        <li>
+        <li onclick="openMenuStart()">
           <img src="./public/windows-icon.svg" />
-          <a href="#">Start</a>
+          <span href="#">Start</span>
         </li>
       </ul>
 
@@ -222,6 +222,33 @@
         <span id="hour"></span>
       </div>
     </nav>
+
+    <div id="overlay" class="disabled" onclick="closedMenuStart()">
+      <div class="menu-start">
+        <nav>
+         <ul>
+          <li onclick="myWindow('.windowMySkills')">
+            <img src="public/files.svg" />
+            <span>My Skills</span>
+          </li>
+  
+          <li onclick="myWindow('.windowMyComputer')">
+            <img src="public/network.svg" />
+            <span>My Network</span>
+          </li>
+  
+          <li onclick="myWindow('.windowMyNetwork')">
+            <img src="public/computer.svg" />
+            <span>My Computer</span>
+          </li>
+         </ul>
+          <button onclick="shutdown()">
+            <img src="public/shutdown.svg" />
+            <span>Shutdown</span>
+          </button>
+        </nav>
+      </div>
+    </div>
   </footer>
 
   <script src="./js/index.js"></script>

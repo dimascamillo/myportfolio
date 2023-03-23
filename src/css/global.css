@@ -137,7 +137,7 @@
   align-items: center;
   gap: 0.6875rem;
 }
-.menu-windows nav li a {
+.menu-windows nav li span {
   font-size: 1.625rem;
   text-decoration: none;
   color: #000000;
@@ -155,6 +155,88 @@
 }
 .menu-windows nav .clock #hour {
   font-size: 1.5rem;
+}
+.menu-windows #overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.menu-windows #overlay .menu-start {
+  transform: translateY(139%);
+  position: relative;
+  background-color: #C3C3C3;
+  width: 310px;
+  height: 364px;
+  padding: 2px 2px 2px 0;
+  box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #F0F0F0, inset -4px -4px 0px #7E7E7E;
+}
+.menu-windows #overlay .menu-start nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu-windows #overlay .menu-start nav ul li {
+  width: 99%;
+  height: 70px;
+  box-shadow: none;
+}
+.menu-windows #overlay .menu-start nav ul li img {
+  width: 46px;
+}
+.menu-windows #overlay .menu-start nav ul li + li {
+  margin-top: 0.5rem;
+}
+.menu-windows #overlay .menu-start nav ul li:hover {
+  background-color: #02007F;
+}
+.menu-windows #overlay .menu-start nav ul li:hover span {
+  color: white;
+}
+.menu-windows #overlay .menu-start nav button {
+  position: relative;
+  margin: 2px 2px 2px 0;
+  cursor: pointer;
+  font-size: 1.625rem;
+  border: 0;
+  background-color: transparent;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.menu-windows #overlay .menu-start nav button:hover {
+  background-color: #02007F;
+}
+.menu-windows #overlay .menu-start nav button:hover span {
+  color: white;
+}
+.menu-windows #overlay .menu-start nav button::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #8E8E8E;
+}
+.menu-windows #overlay .menu-start nav button::after {
+  position: absolute;
+  left: 0;
+  top: 1.5px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+.menu-windows .disabled {
+  display: none;
+}
+.menu-windows .active {
+  display: unset;
 }
 
 * {

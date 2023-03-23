@@ -27,5 +27,15 @@ function myWindow(window) {
   document.querySelector(window).classList.remove('closedWindow');
 }
 
+function openMenuStart() {
+  document.getElementById('overlay').classList.remove('disabled');
+  document.getElementById('overlay').classList.add('active');
+}
+
+function closedMenuStart() {
+  document.getElementById('overlay').classList.remove('active');
+  document.getElementById('overlay').classList.add('disabled');
+}
+
 generatorClock()
 updateClock()

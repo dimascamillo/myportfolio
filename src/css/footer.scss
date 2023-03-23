@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
       gap: .6875rem;
-      a {
+      span {
         font-size: 1.625rem;
         text-decoration: none;
         color: $black;
@@ -38,5 +38,96 @@
         font-size: 1.5rem;
       }
     }
+  }
+
+  #overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .menu-start {
+      transform: translateY(139%);
+      position: relative;
+      background-color: $gray-400;
+      width: 310px;
+      height: 364px;
+      padding: 2px 2px 2px 0;
+      box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #F0F0F0, inset -4px -4px 0px #7E7E7E;
+      nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        ul {
+          li {
+            width: 99%;
+            height: 70px;
+  
+            box-shadow: none;
+            img {
+             width: 46px; 
+            }
+            &+li {
+              margin-top: .5rem;
+            }
+            &:hover {
+              background-color: $blue-500;
+              span {
+                color: $white;
+              }
+            }
+          }
+        }
+  
+        button {
+          position: relative;
+          margin: 2px 2px 2px 0;
+          cursor: pointer;
+          font-size: 1.625rem;
+          border: 0;
+          background-color: transparent;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: .5rem;
+          &:hover {
+            background-color: $blue-500;
+            span {
+              color: $white;
+            }
+          }
+  
+          &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $gray-500;
+          }
+  
+          &::after {
+            position: absolute;
+            left: 0;
+            top: 1.5px;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .disabled {
+    display: none;
+  }
+
+  .active {
+    display: unset;
   }
 }

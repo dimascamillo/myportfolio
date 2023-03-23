@@ -130,4 +130,10 @@
   .active {
     display: unset;
   }
+
+  @media (max-width: 408px) {
+    .menu-windows #overlay .menu-start {
+      bottom: 28px;
+    }
+  }
 }

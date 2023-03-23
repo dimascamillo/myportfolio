@@ -111,3 +111,15 @@
     color: $black;
   }
 }
+
+@media (max-width: 768px) {
+  .window.openWindow {
+    width: 70%;
+    margin: 15px 0;
+    max-width: unset;
+  }
+
+  .window .active {
+    overflow: auto;
+  }
+}

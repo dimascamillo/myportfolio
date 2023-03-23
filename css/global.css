@@ -119,6 +119,16 @@
   color: #000000;
 }
 
+@media (max-width: 768px) {
+  .window.openWindow {
+    width: 70%;
+    margin: 15px 0;
+    max-width: unset;
+  }
+  .window .active {
+    overflow: auto;
+  }
+}
 .menu-windows {
   background-color: #C3C3C3;
   padding: 0.5rem;
@@ -238,6 +248,11 @@
 }
 .menu-windows .active {
   display: unset;
+}
+@media (max-width: 408px) {
+  .menu-windows .menu-windows #overlay .menu-start {
+    bottom: 28px;
+  }
 }
 
 * {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./src/css/global.scss ./src/css/global.css",
+    "sass": "sass --watch ./css/global.scss ./css/global.css",
     "push": "git add . && git commit -m 'alterações no projeto' && git push"
   },
   "type": "module",

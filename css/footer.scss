@@ -41,14 +41,14 @@
   }
 
   #overlay {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     .menu-start {
-      transform: translateY(139%);
-      position: relative;
+      bottom: 67px;
+      position: absolute;  
       background-color: $gray-400;
       width: 310px;
       height: 364px;

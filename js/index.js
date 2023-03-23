@@ -37,9 +37,5 @@ function closedMenuStart() {
   document.getElementById('overlay').classList.add('disabled');
 }
 
-function shutdown() {
-  
-}
-
 generatorClock()
 updateClock()

@@ -27,6 +27,11 @@
           <img src="public/network.svg" />
           <h2>My Network</h2>
         </div>
+
+        <div class="shortcut" onclick="myWindow('.windowMyProjects')">
+          <img src="public/projects.svg" />
+          <h2>My Projects</h2>
+        </div>
       </div>
 
       <div class="row mt-60">
@@ -132,6 +137,33 @@
             <img src="public/print.svg" />
             <h2>POSTGRESQL</h2>
           </div>
+        </section>
+      </div>
+
+      <div class="windowMyProjects window">
+        <header>
+          <div class="boxTitle">
+            <img src="./public/network.svg" />
+            <h3>My Projects</h3>
+          </div>
+
+          <nav>
+            <li><a href="#"><img src="public/minimize.svg" /></a></li>
+            <li><a href="#"><img src="public/maximize.svg" /></a></li>
+            <li><a onclick="closedWindow('.windowMyProjects')" href="#"><img src="public/closed.svg" /></a></li>
+          </nav>
+        </header>
+
+        <nav>
+          <li><a href="#">My Projects</a></li>
+        </nav>
+
+        <section class="active" id="windowMyProjects">
+          <article>
+            <ul id="listRepos">
+              
+            </ul>
+          </article>
         </section>
       </div>
 
@@ -254,5 +286,6 @@
   <script src="./js/index.js"></script>
   <script src="js/frontEndWindow.js"></script>
   <script src="js/backEndWindow.js"></script>
+  <script src="js/githubApi.js"></script>
 </body>
 </html>

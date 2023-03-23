@@ -102,8 +102,21 @@
 .window article p + p {
   margin-top: 1.5rem;
 }
+.window #listRepos li {
+  list-style: none;
+}
+.window #listRepos li + li {
+  margin-top: 1rem;
+}
+.window #listRepos li::first-letter {
+  text-transform: uppercase;
+}
+.window #listRepos li a {
+  font-size: 1.5rem;
+}
 .window .active {
   display: flex;
+  overflow: auto;
 }
 .window .disabled {
   display: none;

@@ -12,18 +12,18 @@
   <main>
     <div class="container">
       <div class="row">
-        <div class="shortcut" onclick="myskills()">
+        <div class="shortcut" onclick="myWindow('.windowMySkills')">
           <img src="public/files.svg" />
           <h2>My Skills</h2>
         </div>
-        <div class="shortcut">
+        <div class="shortcut" onclick="myWindow('.windowMyComputer')">
           <img src="public/computer.svg" />
           <h2>My Computer</h2>
         </div>
       </div>
   
       <div class="row mt-60">
-        <div class="shortcut">
+        <div class="shortcut" onclick="myWindow('.windowMyNetwork')">
           <img src="public/network.svg" />
           <h2>My Network</h2>
         </div>
@@ -46,7 +46,7 @@
           <nav>
             <li><a href="#"><img src="public/minimize.svg" /></a></li>
             <li><a href="#"><img src="public/maximize.svg" /></a></li>
-            <li><a onclick="closedWindow()" href="#"><img src="public/closed.svg" /></a></li>
+            <li><a onclick="closedWindow('.windowMySkills')" href="#"><img src="public/closed.svg" /></a></li>
           </nav>
         </header>
 
@@ -132,6 +132,77 @@
             <img src="public/print.svg" />
             <h2>POSTGRESQL</h2>
           </div>
+        </section>
+      </div>
+
+      <div class="windowMyNetwork window">
+        <header>
+          <div class="boxTitle">
+            <img src="./public/network.svg" />
+            <h3>My Network</h3>
+          </div>
+
+          <nav>
+            <li><a href="#"><img src="public/minimize.svg" /></a></li>
+            <li><a href="#"><img src="public/maximize.svg" /></a></li>
+            <li><a onclick="closedWindow('.windowMyNetwork')" href="#"><img src="public/closed.svg" /></a></li>
+          </nav>
+        </header>
+
+        <nav>
+          <li><a href="#">My social networks</a></li>
+        </nav>
+
+        <section class="active" id="windowMyNetwork">
+          <div class="skill">
+            <a href="https://twitter.com/DimasCamillo" target="_blank">
+              <img src="public/removable.svg" />
+              <h2>Twitter</h2>
+            </a>
+          </div>
+
+          <div class="skill">
+            <a href="https://www.linkedin.com/in/dimas-camillo/" target="_blank">
+              <img src="public/c.svg" />
+              <h2>Linkedin</h2>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="windowMyComputer window">
+        <header>
+          <div class="boxTitle">
+            <img src="./public/computer.svg" />
+            <h3>My Computer</h3>
+          </div>
+
+          <nav>
+            <li><a href="#"><img src="public/minimize.svg" /></a></li>
+            <li><a href="#"><img src="public/maximize.svg" /></a></li>
+            <li><a onclick="closedWindow('.windowMyComputer')" href="#"><img src="public/closed.svg" /></a></li>
+          </nav>
+        </header>
+
+        <nav>
+          <li><a href="#">My Computer</a></li>
+        </nav>
+
+        <section class="active" id="windowMyNetwork">
+          <article>
+            <p>
+              Meu nome é Dimas Camillo, moro no Rio de Janeiro, sou Desenvolvedor
+              Full Stack, atualmente trabalho na SONDA e desenvolvo algumas aplicações em
+              Angular.js, REACT.js com NODE.js como Back-end.
+            </p>
+            <p>
+              Um pouco da minha história, comecei a trabalhar com Desenvolvimento em  2013/2014.
+              Desenvolvi o Fron-end de algumas aplicações, tive meu primeiro contato com o PHP como
+              linguagem de Back-end.
+              Desde então nunca mais parei, estou sempre em busca de aprender, aperfeiçar meus conhecimento
+              na Área de Tecnologia e estou sempre à procura de novos desafios!
+            </p>
+          </article>
         </section>
       </div>
     </div>

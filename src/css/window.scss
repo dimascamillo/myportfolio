@@ -81,6 +81,15 @@
 
   }
 
+  article {
+    p {
+      font-size: 1.3rem;
+    }
+    p + p {
+      margin-top: 1.5rem;
+    }
+  }
+
   .active {
     display: flex;
   }
@@ -95,5 +104,10 @@
 
   &.openWindow {
     display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
   }
 }

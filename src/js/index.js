@@ -17,14 +17,14 @@ function updateClock() {
   }, 60000);
 }
 
-function closedWindow() {
-  document.querySelector('.windowMySkills').classList.remove('openWindow');
-  document.querySelector('.windowMySkills').classList.add('closedWindow');
+function closedWindow(window) {
+  document.querySelector(window).classList.remove('openWindow');
+  document.querySelector(window).classList.add('closedWindow');
 }
 
-function myskills() {
-  document.querySelector('.windowMySkills').classList.add('openWindow');
-  document.querySelector('.windowMySkills').classList.remove('closedWindow');
+function myWindow(window) {
+  document.querySelector(window).classList.add('openWindow');
+  document.querySelector(window).classList.remove('closedWindow');
 }
 
 generatorClock()

@@ -95,6 +95,12 @@
 .window section .skill h2 {
   margin-top: 1rem;
 }
+.window article p {
+  font-size: 1.3rem;
+}
+.window article p + p {
+  margin-top: 1.5rem;
+}
 .window .active {
   display: flex;
 }
@@ -106,6 +112,10 @@
 }
 .window.openWindow {
   display: block;
+}
+.window a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .menu-windows {

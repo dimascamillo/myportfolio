@@ -268,6 +268,18 @@
   }
 }
 
+form input, form textarea {
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
+form textarea {
+  resize: none;
+}
+form button[type=submit] {
+  margin: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;

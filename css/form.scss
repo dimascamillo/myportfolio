@@ -1,0 +1,15 @@
+form {
+  input, textarea{
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+ button[type="submit"] {
+  margin: 1rem;
+ }
+}

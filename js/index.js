@@ -5,10 +5,9 @@ function generatorClock() {
   
   let hour = newHour.getHours();
   let minute = newHour.getMinutes();
-  let ampm = hour >= 12 ? 'PM' : 'AM';
   let formatMinute = minute < 10 ? `0${minute}` : minute;
   
-  spanHour.innerHTML = `${hour}:${formatMinute}${ampm}`;
+  spanHour.innerHTML = `${hour}:${formatMinute}`;
 }
 
 function updateClock() {
@@ -35,6 +34,10 @@ function openMenuStart() {
 function closedMenuStart() {
   document.getElementById('overlay').classList.remove('active');
   document.getElementById('overlay').classList.add('disabled');
+}
+
+function validityForm() {
+  
 }
 
 generatorClock()

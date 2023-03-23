@@ -35,6 +35,11 @@
       </div>
 
       <div class="row mt-60">
+        <div class="shortcut" onclick="myWindow('.windowContact')">
+          <img src="public/contact.svg" />
+          <h2>Contact</h2>
+        </div>
+
         <div class="shortcut">
           <img src="public/recycle.svg" />
           <h2>Recycle Bin</h2>
@@ -235,6 +240,35 @@
               na Área de Tecnologia e estou sempre à procura de novos desafios!
             </p>
           </article>
+        </section>
+      </div>
+      
+      <div class="windowContact window">
+        <header>
+          <div class="boxTitle">
+            <img src="./public/contact.svg" />
+            <h3>Contact</h3>
+          </div>
+
+          <nav>
+            <li><a href="#"><img src="public/minimize.svg" /></a></li>
+            <li><a href="#"><img src="public/maximize.svg" /></a></li>
+            <li><a onclick="closedWindow('.windowContact')" href="#"><img src="public/closed.svg" /></a></li>
+          </nav>
+        </header>
+
+        <nav>
+          <li><a href="#">Contact</a></li>
+        </nav>
+
+        <section class="active" id="windowContact">
+          <form action="">
+            <input type="text" placeholder="Insira o seu nome" />
+            <input type="email" placeholder="Insira o seu e-mail" />
+            <input type="text" placeholder="Insira o assunto" />
+            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+            <button type="submit" onclick="validityForm()">Send</button>
+          </form>
         </section>
       </div>
     </div>

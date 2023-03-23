@@ -5,6 +5,7 @@
 .row {
   display: flex;
   gap: 3.75rem;
+  flex-wrap: wrap;
 
   .shortcut {
     cursor: pointer;

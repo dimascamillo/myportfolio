@@ -1,12 +1,31 @@
-const newHour = new Date();
+function generatorClock() {
+  const newHour = new Date();
 
-const showHour = true;
+  let spanHour = document.getElementById('hour')
+  
+  let hour = newHour.getHours();
+  let minute = newHour.getMinutes();
+  let ampm = hour >= 12 ? 'PM' : 'AM';
+  let formatMinute = minute < 10 ? `0${minute}` : minute;
+  
+  spanHour.innerHTML = `${hour}:${formatMinute}${ampm}`;
+}
 
-let spanHour = document.getElementById('hour')
+function updateClock() {
+  setInterval(() => {
+    generatorClock()
+  }, 60000);
+}
 
-let hour = newHour.getHours();
-let minute = newHour.getMinutes();
-let ampm = hour >= 12 ? 'PM' : 'AM';
+function closedWindow() {
+  document.querySelector('.windowMySkills').classList.remove('openWindow');
+  document.querySelector('.windowMySkills').classList.add('closedWindow');
+}
 
-spanHour.innerHTML = `${hour}:${minute}${ampm}`;
+function myskills() {
+  document.querySelector('.windowMySkills').classList.add('openWindow');
+  document.querySelector('.windowMySkills').classList.remove('closedWindow');
+}
 
+generatorClock()
+updateClock()

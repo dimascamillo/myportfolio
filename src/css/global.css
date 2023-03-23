@@ -22,6 +22,92 @@
   color: white;
 }
 
+.window {
+  background-color: #C3C3C3;
+  padding: 0.3125rem;
+  position: absolute;
+  max-width: 737px;
+  max-height: 503px;
+  width: 737px;
+  height: 503px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.window header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #02007F;
+  padding: 0.3125rem 0.5rem;
+}
+.window header .boxTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  color: white;
+  font-size: 1, 875rem;
+}
+.window header .boxTitle img {
+  width: 32px;
+}
+.window header nav {
+  display: flex;
+  gap: 0.3125rem;
+  align-items: center;
+  list-style: none;
+}
+.window nav {
+  padding-left: 1rem;
+  display: flex;
+  margin: 1rem;
+  margin-right: 0;
+  list-style: none;
+  gap: 2rem;
+}
+.window nav a {
+  font-size: 1.625rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+.window nav a::first-letter {
+  text-decoration: underline;
+}
+.window section {
+  height: 357px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3.75rem;
+  background: #FFFFFF;
+  box-shadow: inset 2px 2px 0px #262626, inset -2px -2px 0px #F0F0F0, inset 4px 4px 0px #7E7E7E;
+}
+.window section .skill {
+  width: 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.window section .skill img {
+  width: 64px;
+}
+.window section .skill h2 {
+  margin-top: 1rem;
+}
+.window .active {
+  display: flex;
+}
+.window .disabled {
+  display: none;
+}
+.window.closedWindow {
+  display: none;
+}
+.window.openWindow {
+  display: block;
+}
+
 .menu-windows {
   background-color: #C3C3C3;
   padding: 0.5rem;

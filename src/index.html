@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dimas Camillo | Portfolio</title>
   <link rel="stylesheet" href="css/global.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
   <main>
     <div class="container">
       <div class="row">
-        <div class="shortcut">
+        <div class="shortcut" onclick="myskills()">
           <img src="public/files.svg" />
           <h2>My Skills</h2>
         </div>
@@ -35,6 +36,104 @@
         </div>
       </div>
 
+      <div class="windowMySkills window">
+        <header>
+          <div class="boxTitle">
+            <img src="./public/files.svg" />
+            <h3>My Skills</h3>
+          </div>
+
+          <nav>
+            <li><a href="#"><img src="public/minimize.svg" /></a></li>
+            <li><a href="#"><img src="public/maximize.svg" /></a></li>
+            <li><a onclick="closedWindow()" href="#"><img src="public/closed.svg" /></a></li>
+          </nav>
+        </header>
+
+        <nav>
+          <li><a onclick="frontEndWindow()" href="#">Front-end</a></li>
+          <li><a onclick="backEndWindow()" href="#">Back-end</a></li>
+        </nav>
+
+        <section class="active" id="windowFrontEnd">
+          <div class="skill">
+            <img src="public/removable.svg" />
+            <h2>HTML</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/c.svg" />
+            <h2>CSS</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/c.svg" />
+            <h2>TAILWIND</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/cp.svg" />
+            <h2>JAVASCRIPT</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/print.svg" />
+            <h2>REACT</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/print.svg" />
+            <h2>NEXT.JS</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/print.svg" />
+            <h2>ANGULAR.JS</h2>
+          </div>
+        </section>
+
+        <section class="disabled" id="windowBackEnd">
+          <div class="skill">
+            <img src="public/removable.svg" />
+            <h2>JAVA</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/c.svg" />
+            <h2>PYTHON</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/c.svg" />
+            <h2>FLASK</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/c.svg" />
+            <h2>DJANGO</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/cp.svg" />
+            <h2>NODE.JS</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/cp.svg" />
+            <h2>TYPESCRIPT</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/print.svg" />
+            <h2>MYSQL</h2>
+          </div>
+
+          <div class="skill">
+            <img src="public/print.svg" />
+            <h2>POSTGRESQL</h2>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
 
@@ -55,5 +154,7 @@
   </footer>
 
   <script src="./js/index.js"></script>
+  <script src="js/frontEndWindow.js"></script>
+  <script src="js/backEndWindow.js"></script>
 </body>
 </html>

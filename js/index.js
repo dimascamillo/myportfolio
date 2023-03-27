@@ -37,8 +37,39 @@ function closedMenuStart() {
 }
 
 function validityForm() {
-  
+  let form = document.querySelector('form');
+  let formInputs = document.querySelectorAll('input')
+  let verify = "";
+  let msgError = document.createElement('span');
+  form.appendChild(msgError);
+
+  let mensagem = document.getElementById('mensagem')
+
+  formInputs.forEach(input=> {
+
+    if([input.value].includes(verify) && mensagem.value == verify) {
+      input.classList.add('inputError')
+      input.setAttribute('placeholder', 
+      `Por favor preencha o campo ${input.name} corretamente`)
+
+      mensagem.classList.add('inputError')
+      mensagem.setAttribute('placeholder', 
+      `Por favor preencha o campo Mensagem corretamente`)
+
+    } else if([input.value].includes(verify) && mensagem.value !== verify){
+      input.classList.remove('inputError')
+      input.value = ""
+      mensagem.value = ""
+      mensagem.classList.remove('inputError')
+    }
+  })
 }
+
+const enviar = document.getElementById('enviar')
+enviar.addEventListener('click', (e)=> {
+  e.preventDefault()
+  validityForm();
+})
 
 generatorClock()
 updateClock()

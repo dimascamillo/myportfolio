@@ -271,12 +271,12 @@
         </nav>
 
         <section class="active" id="windowContact">
-          <form action="">
-            <input type="text" placeholder="Insira o seu nome" />
-            <input type="email" placeholder="Insira o seu e-mail" />
-            <input type="text" placeholder="Insira o assunto" />
+          <form>
+            <input name="Nome" type="text" placeholder="Insira o seu nome" />
+            <input name="Email" type="email" placeholder="Insira o seu e-mail" />
+            <input name="Assunto" type="text" placeholder="Insira o assunto" />
             <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
-            <button type="submit" onclick="validityForm()">Send</button>
+            <button id="enviar" type="submit">Send</button>
           </form>
         </section>
       </div>
@@ -325,7 +325,7 @@
       </div>
     </div>
   </footer>
-
+  
   <script src="./js/index.js"></script>
   <script src="js/frontEndWindow.js"></script>
   <script src="js/backEndWindow.js"></script>

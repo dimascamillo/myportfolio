@@ -276,8 +276,22 @@ form input, form textarea {
 form textarea {
   resize: none;
 }
+form .inputError {
+  border: 1px solid rgb(185, 19, 19);
+}
 form button[type=submit] {
+  cursor: pointer;
   margin: 1rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  background-color: #8E8E8E;
+  color: white;
+}
+form button[type=submit]:not(:disabled):hover {
+  background-color: #02007F;
+}
+form button[type=submit]:disabled {
+  cursor: not-allowed;
 }
 
 * {

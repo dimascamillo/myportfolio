@@ -9,7 +9,22 @@ form {
     resize: none;
   }
 
+  .inputError {
+    border: 1px solid $red-500;
+  }
+
  button[type="submit"] {
+  cursor: pointer;
   margin: 1rem;
+  padding: .5rem 2rem;
+  border: none;
+  background-color: $gray-500;
+  color: $white;
+  &:not(:disabled):hover {
+    background-color: $blue-500;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
  }
 }
